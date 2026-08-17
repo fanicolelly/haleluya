@@ -1,0 +1,695 @@
+[
+  {
+    "id": "p01",
+    "name": "Sepatu Lari UltraBoost Runner",
+    "category": "Olahraga",
+    "price": 459000,
+    "rating": 4.6,
+    "desc": "Sepatu lari ringan dengan sol responsif, cocok untuk pelari pemula hingga menengah.",
+    "longDescription": "Didesain untuk pelari harian, UltraBoost Runner menggabungkan busa EVA responsif dengan outsole karet anti-slip yang tahan di berbagai permukaan. Upper mesh berpori menjaga kaki tetap sejuk selama lari jarak jauh, sementara heel counter memberi stabilitas ekstra saat mendarat.",
+    "stock": 42,
+    "images": ["p01-1", "p01-2", "p01-3"],
+    "specs": {
+      "Bahan Upper": "Mesh berpori",
+      "Sol": "EVA + karet anti-slip",
+      "Ukuran Tersedia": "39-44",
+      "Berat": "270 gram (per sepatu, size 42)",
+      "Cocok Untuk": "Lari harian, jalan cepat"
+    }
+  },
+  {
+    "id": "p02",
+    "name": "Smartphone VisionCam X200",
+    "category": "Elektronik",
+    "price": 3299000,
+    "rating": 4.7,
+    "desc": "Kamera triple lens 108MP, stabilizer video, baterai 5000mAh — cocok untuk konten dan vlog harian.",
+    "longDescription": "VisionCam X200 mengusung sistem kamera triple lens 108MP dengan stabilisasi optis untuk hasil foto dan video yang tajam meski dalam gerakan. Baterai 5000mAh dengan fast charging 33W mendukung penggunaan seharian penuh untuk konten kreator maupun pengguna harian.",
+    "stock": 18,
+    "images": ["p02-1", "p02-2", "p02-3"],
+    "specs": {
+      "Kamera": "Triple lens 108MP + OIS",
+      "Baterai": "5000mAh, fast charging 33W",
+      "Layar": "6.5\" AMOLED 120Hz",
+      "Konektivitas": "5G, WiFi 6, USB-C",
+      "Garansi": "1 tahun resmi"
+    }
+  },
+  {
+    "id": "p03",
+    "name": "Blender Portable JuiceGo Mini",
+    "category": "Rumah Tangga",
+    "price": 189000,
+    "rating": 4.3,
+    "desc": "Blender USB rechargeable dengan 4 pisau stainless, praktis untuk anak kos.",
+    "longDescription": "JuiceGo Mini adalah blender portable USB rechargeable yang praktis dibawa kemana saja. Empat mata pisau stainless steel mampu menghaluskan buah dan es dengan cepat, cocok untuk anak kos maupun kebutuhan kantor.",
+    "stock": 76,
+    "images": ["p03-1", "p03-2", "p03-3"],
+    "specs": {
+      "Kapasitas": "400 ml",
+      "Daya": "Baterai 2000mAh (USB rechargeable)",
+      "Material Pisau": "Stainless steel 4 mata",
+      "Waktu Pengisian": "~2.5 jam",
+      "Garansi": "6 bulan"
+    }
+  },
+  {
+    "id": "p04",
+    "name": "Kemeja Linen Pria Breezy",
+    "category": "Fashion",
+    "price": 149000,
+    "rating": 4.5,
+    "desc": "Bahan linen adem dan ringan, cocok dipakai di cuaca panas.",
+    "longDescription": "Breezy dibuat dari 100% linen alami yang adem dan breathable, ideal untuk cuaca tropis. Potongan regular fit dengan jahitan rapi membuatnya nyaman dipakai untuk acara santai maupun semi-formal.",
+    "stock": 120,
+    "images": ["p04-1", "p04-2", "p04-3"],
+    "specs": {
+      "Bahan": "100% linen",
+      "Ukuran Tersedia": "S, M, L, XL, XXL",
+      "Warna": "Putih, Krem, Navy",
+      "Cara Perawatan": "Cuci mesin suhu rendah, jangan diperas kuat"
+    }
+  },
+  {
+    "id": "p05",
+    "name": "Serum Wajah GlowDrop Vitamin C",
+    "category": "Kecantikan",
+    "price": 85000,
+    "rating": 4.4,
+    "desc": "Serum pencerah dengan vitamin C, formula ringan untuk kulit sensitif.",
+    "longDescription": "GlowDrop diformulasikan dengan Vitamin C 10% dan Niacinamide untuk membantu mencerahkan kulit kusam serta meratakan warna kulit. Teksturnya ringan dan cepat meresap, cocok dipakai pagi maupun malam hari.",
+    "stock": 95,
+    "images": ["p05-1", "p05-2", "p05-3"],
+    "specs": {
+      "Volume": "30 ml",
+      "Kandungan Utama": "Vitamin C 10%, Niacinamide",
+      "Jenis Kulit": "Semua jenis kulit, termasuk sensitif",
+      "Klaim": "Bebas alkohol, bebas pewangi",
+      "Masa Simpan": "12 bulan setelah dibuka"
+    }
+  },
+  {
+    "id": "p06",
+    "name": "Headphone Wireless SoundWave Pro",
+    "category": "Elektronik",
+    "price": 399000,
+    "rating": 4.6,
+    "desc": "Noise cancelling aktif, daya tahan baterai hingga 30 jam.",
+    "longDescription": "SoundWave Pro hadir dengan Active Noise Cancelling yang meredam kebisingan sekitar, cocok untuk kerja fokus maupun perjalanan jauh. Daya tahan baterai hingga 30 jam membuatnya tidak perlu sering diisi ulang.",
+    "stock": 54,
+    "images": ["p06-1", "p06-2", "p06-3"],
+    "specs": {
+      "Tipe": "Over-ear wireless",
+      "Baterai": "30 jam (ANC aktif)",
+      "Konektivitas": "Bluetooth 5.3",
+      "Fitur": "Active Noise Cancelling, mic bawaan",
+      "Garansi": "1 tahun resmi"
+    }
+  },
+  {
+    "id": "p07",
+    "name": "Tas Ransel Laptop UrbanPack",
+    "category": "Fashion",
+    "price": 275000,
+    "rating": 4.5,
+    "desc": "Tahan air, muat laptop 15 inci, banyak kompartemen untuk kebutuhan harian.",
+    "longDescription": "UrbanPack dirancang tahan air dengan kompartemen laptop empuk berlapis busa, muat laptop hingga 15 inci. Banyaknya kompartemen memudahkan mengatur barang bawaan harian, dari kabel hingga botol minum.",
+    "stock": 63,
+    "images": ["p07-1", "p07-2", "p07-3"],
+    "specs": {
+      "Material": "Nylon anti-air",
+      "Muat Laptop": "Hingga 15 inci",
+      "Kapasitas": "22 liter",
+      "Kompartemen": "3 utama + 2 saku kecil",
+      "Warna": "Hitam, Abu-abu"
+    }
+  },
+  {
+    "id": "p08",
+    "name": "Matras Yoga EcoFlex",
+    "category": "Olahraga",
+    "price": 129000,
+    "rating": 4.2,
+    "desc": "Permukaan anti-slip, bahan ramah lingkungan, tebal 6mm.",
+    "longDescription": "EcoFlex terbuat dari bahan ramah lingkungan dengan permukaan anti-slip di kedua sisi, memberi cengkeraman optimal saat pose yoga maupun latihan lantai lainnya. Ketebalan 6mm memberi bantalan nyaman untuk sendi.",
+    "stock": 88,
+    "images": ["p08-1", "p08-2", "p08-3"],
+    "specs": {
+      "Bahan": "TPE ramah lingkungan",
+      "Ketebalan": "6 mm",
+      "Ukuran": "183 x 61 cm",
+      "Permukaan": "Anti-slip dua sisi",
+      "Berat": "900 gram"
+    }
+  },
+  {
+    "id": "p09",
+    "name": "Rice Cooker MiniCook 1L",
+    "category": "Rumah Tangga",
+    "price": 219000,
+    "rating": 4.4,
+    "desc": "Ukuran mini hemat listrik, pas untuk kebutuhan anak kos atau 1-2 orang.",
+    "longDescription": "MiniCook 1L pas untuk kebutuhan masak 1-2 porsi, hemat listrik dan ruang penyimpanan. Panci anti lengket memudahkan proses membersihkan setelah memasak.",
+    "stock": 7,
+    "images": ["p09-1", "p09-2", "p09-3"],
+    "specs": {
+      "Kapasitas": "1 liter (untuk 1-2 orang)",
+      "Daya": "300 Watt",
+      "Material Panci": "Anti lengket non-stick",
+      "Fitur": "Auto keep-warm",
+      "Garansi": "1 tahun"
+    }
+  },
+  {
+    "id": "p10",
+    "name": "Sunscreen SPF50 DailyShield",
+    "category": "Kecantikan",
+    "price": 65000,
+    "rating": 4.6,
+    "desc": "Tekstur ringan tidak lengket, cocok untuk kulit berminyak sehari-hari.",
+    "longDescription": "DailyShield memberi perlindungan SPF50 PA+++ dengan tekstur ringan yang tidak meninggalkan white cast maupun rasa lengket, cocok dipakai setiap hari termasuk untuk kulit berminyak.",
+    "stock": 140,
+    "images": ["p10-1", "p10-2", "p10-3"],
+    "specs": {
+      "Volume": "40 ml",
+      "SPF": "SPF50 PA+++",
+      "Jenis Kulit": "Berminyak, kombinasi",
+      "Tekstur": "Ringan, tanpa white cast",
+      "Klaim": "Bebas alkohol"
+    }
+  },
+  {
+    "id": "p11",
+    "name": "Kamera Mirrorless VisionShot M2",
+    "category": "Elektronik",
+    "price": 6799000,
+    "rating": 4.8,
+    "desc": "Kualitas gambar tinggi untuk konten kreator dan vlog profesional.",
+    "longDescription": "VisionShot M2 menghadirkan sensor APS-C 26MP dengan autofocus cepat, cocok untuk konten kreator dan fotografer yang membutuhkan kualitas gambar profesional dalam bodi yang ringkas.",
+    "stock": 9,
+    "images": ["p11-1", "p11-2", "p11-3"],
+    "specs": {
+      "Sensor": "APS-C 26MP",
+      "Video": "4K 30fps",
+      "Autofocus": "Phase detection, 425 titik",
+      "Konektivitas": "WiFi, Bluetooth, USB-C",
+      "Garansi": "2 tahun resmi"
+    }
+  },
+  {
+    "id": "p12",
+    "name": "Sandal Outdoor TrailWalker",
+    "category": "Olahraga",
+    "price": 179000,
+    "rating": 4.3,
+    "desc": "Grip kuat untuk hiking dan aktivitas luar ruangan.",
+    "longDescription": "TrailWalker punya grip agresif yang dirancang untuk medan tidak rata, cocok untuk hiking ringan maupun aktivitas outdoor lainnya. Strap yang bisa disesuaikan memberi kenyamanan sepanjang hari.",
+    "stock": 55,
+    "images": ["p12-1", "p12-2", "p12-3"],
+    "specs": {
+      "Bahan Sol": "Karet grip agresif",
+      "Upper": "Strap adjustable, quick-dry",
+      "Ukuran Tersedia": "38-43",
+      "Cocok Untuk": "Hiking ringan, outdoor",
+      "Berat": "320 gram"
+    }
+  },
+  {
+    "id": "p13",
+    "name": "Dress Casual Linen Wanita Aira",
+    "category": "Fashion",
+    "price": 189000,
+    "rating": 4.5,
+    "desc": "Nyaman dipakai harian, bahan adem dan tidak mudah kusut.",
+    "longDescription": "Aira dibuat dari bahan linen adem dengan potongan A-line yang nyaman dan flattering untuk berbagai bentuk tubuh. Tidak mudah kusut sehingga tetap rapi dipakai seharian.",
+    "stock": 47,
+    "images": ["p13-1", "p13-2", "p13-3"],
+    "specs": {
+      "Bahan": "Linen premium",
+      "Ukuran Tersedia": "S, M, L, XL",
+      "Model": "A-line, midi",
+      "Warna": "Terracotta, Sage, Cream",
+      "Cara Perawatan": "Cuci tangan disarankan"
+    }
+  },
+  {
+    "id": "p14",
+    "name": "Air Fryer CrispHome 3L",
+    "category": "Rumah Tangga",
+    "price": 349000,
+    "rating": 4.7,
+    "desc": "Masak tanpa minyak, hemat listrik, cocok untuk keluarga kecil.",
+    "longDescription": "CrispHome 3L memungkinkan memasak tanpa minyak dengan hasil renyah merata, dilengkapi panel kontrol digital dengan preset menu. Kapasitas 3 liter cocok untuk keluarga kecil.",
+    "stock": 31,
+    "images": ["p14-1", "p14-2", "p14-3"],
+    "specs": {
+      "Kapasitas": "3 liter",
+      "Daya": "1300 Watt",
+      "Kontrol": "Digital dengan preset menu",
+      "Suhu": "80-200°C",
+      "Garansi": "1 tahun"
+    }
+  },
+  {
+    "id": "p15",
+    "name": "Botol Minum Olahraga HydroFlask Sporty",
+    "category": "Olahraga",
+    "price": 89000,
+    "rating": 4.4,
+    "desc": "Botol minum stainless steel dengan insulasi ganda, menjaga air tetap dingin hingga 12 jam saat olahraga.",
+    "longDescription": "HydroFlask Sporty memakai teknologi vacuum insulation dua lapis yang membuat minuman tetap dingin meski dipakai seharian, cocok dibawa saat lari, gym, atau hiking. Tutupnya kedap bocor dan mudah dibawa dengan pegangan terintegrasi.",
+    "stock": 110,
+    "images": ["p15-1", "p15-2", "p15-3"],
+    "specs": {
+      "Material": "Stainless steel 304",
+      "Kapasitas": "750 ml",
+      "Insulasi": "Vacuum ganda, dingin hingga 12 jam",
+      "Fitur": "Anti bocor, pegangan terintegrasi"
+    }
+  },
+  {
+    "id": "p16",
+    "name": "Resistance Band Set FlexTrain",
+    "category": "Olahraga",
+    "price": 99000,
+    "rating": 4.3,
+    "desc": "Set resistance band 5 level tahanan untuk latihan kekuatan di rumah maupun gym.",
+    "longDescription": "FlexTrain berisi 5 band dengan tingkat tahanan berbeda, cocok untuk pemanasan, latihan kekuatan, hingga rehabilitasi otot ringan. Ringkas dan mudah dibawa bepergian, dilengkapi tas penyimpanan.",
+    "stock": 130,
+    "images": ["p16-1", "p16-2", "p16-3"],
+    "specs": {
+      "Isi Paket": "5 band (light-extra heavy)",
+      "Material": "Latex alami",
+      "Fitur": "Tas penyimpanan",
+      "Cocok Untuk": "Latihan kekuatan, rehabilitasi ringan"
+    }
+  },
+  {
+    "id": "p17",
+    "name": "Smartwatch FitTrack S3",
+    "category": "Elektronik",
+    "price": 899000,
+    "rating": 4.6,
+    "desc": "Smartwatch dengan pelacak detak jantung, tidur, dan lebih dari 20 mode olahraga.",
+    "longDescription": "FitTrack S3 memantau detak jantung, kualitas tidur, dan kadar oksigen darah secara real-time, dengan lebih dari 20 mode olahraga untuk melacak aktivitas harian. Baterai tahan hingga 7 hari pemakaian normal.",
+    "stock": 26,
+    "images": ["p17-1", "p17-2", "p17-3"],
+    "specs": {
+      "Layar": "1.4\" AMOLED",
+      "Baterai": "Hingga 7 hari",
+      "Sensor": "Detak jantung, SpO2, akselerometer",
+      "Ketahanan Air": "5 ATM",
+      "Konektivitas": "Bluetooth 5.0"
+    }
+  },
+  {
+    "id": "p18",
+    "name": "Power Bank FastCharge 20000mAh",
+    "category": "Elektronik",
+    "price": 259000,
+    "rating": 4.5,
+    "desc": "Power bank kapasitas besar dengan fast charging dua arah untuk mengisi daya perangkat berkali-kali.",
+    "longDescription": "FastCharge 20000mAh mendukung pengisian dua arah 22.5W, cukup untuk mengisi penuh smartphone hingga 4 kali. Dilengkapi tiga port output sehingga bisa mengisi beberapa perangkat sekaligus.",
+    "stock": 68,
+    "images": ["p18-1", "p18-2", "p18-3"],
+    "specs": {
+      "Kapasitas": "20000 mAh",
+      "Daya Output": "22.5W fast charging",
+      "Port": "2x USB-A, 1x USB-C",
+      "Berat": "340 gram"
+    }
+  },
+  {
+    "id": "p19",
+    "name": "Setrika Uap SteamPress Compact",
+    "category": "Rumah Tangga",
+    "price": 175000,
+    "rating": 4.4,
+    "desc": "Setrika uap ringkas dengan pemanasan cepat, cocok untuk kebutuhan harian maupun bepergian.",
+    "longDescription": "SteamPress Compact panas dalam 30 detik dan menghasilkan uap merata untuk merapikan pakaian tanpa merusak serat kain. Ukurannya ringkas sehingga mudah disimpan atau dibawa saat traveling.",
+    "stock": 84,
+    "images": ["p19-1", "p19-2", "p19-3"],
+    "specs": {
+      "Daya": "1200 Watt",
+      "Waktu Panas": "~30 detik",
+      "Kapasitas Tangki Air": "180 ml",
+      "Berat": "0.9 kg"
+    }
+  },
+  {
+    "id": "p20",
+    "name": "Dispenser Air PureFlow Mini",
+    "category": "Rumah Tangga",
+    "price": 289000,
+    "rating": 4.3,
+    "desc": "Dispenser air portable dengan pompa otomatis, praktis untuk galon di rumah maupun kos.",
+    "longDescription": "PureFlow Mini memakai pompa otomatis USB rechargeable yang memudahkan mengambil air dari galon tanpa perlu diangkat. Desainnya ringkas dan mudah dipindah antar ruangan.",
+    "stock": 39,
+    "images": ["p20-1", "p20-2", "p20-3"],
+    "specs": {
+      "Daya": "USB rechargeable 1200mAh",
+      "Kompatibilitas": "Galon standar 19L",
+      "Fitur": "Pompa otomatis, sensor sentuh",
+      "Waktu Pengisian": "~3 jam"
+    }
+  },
+  {
+    "id": "p21",
+    "name": "Celana Chino Pria Slimfit ComfortFit",
+    "category": "Fashion",
+    "price": 165000,
+    "rating": 4.4,
+    "desc": "Celana chino slim fit dengan bahan stretch yang nyaman dipakai seharian.",
+    "longDescription": "ComfortFit dibuat dari campuran katun dan sedikit elastane sehingga tetap nyaman meski dipakai bergerak aktif. Potongan slim fit modern cocok untuk gaya kasual maupun semi-formal.",
+    "stock": 97,
+    "images": ["p21-1", "p21-2", "p21-3"],
+    "specs": {
+      "Bahan": "Katun stretch",
+      "Ukuran Tersedia": "29-36",
+      "Model": "Slim fit",
+      "Warna": "Khaki, Navy, Hitam"
+    }
+  },
+  {
+    "id": "p22",
+    "name": "Topi Bucket Hat StreetStyle",
+    "category": "Fashion",
+    "price": 79000,
+    "rating": 4.2,
+    "desc": "Bucket hat bahan kanvas dengan desain minimalis, pelengkap gaya kasual sehari-hari.",
+    "longDescription": "StreetStyle terbuat dari kanvas tebal yang awet dan mudah dibentuk ulang, dengan lubang ventilasi kecil agar kepala tetap sejuk. Cocok dipadukan dengan berbagai outfit kasual.",
+    "stock": 150,
+    "images": ["p22-1", "p22-2", "p22-3"],
+    "specs": {
+      "Bahan": "Kanvas katun",
+      "Lingkar Kepala": "56-59 cm (adjustable)",
+      "Warna": "Hitam, Krem, Olive"
+    }
+  },
+  {
+    "id": "p23",
+    "name": "Lip Cream Matte VelvetTouch",
+    "category": "Kecantikan",
+    "price": 45000,
+    "rating": 4.5,
+    "desc": "Lip cream matte dengan formula ringan, tahan lama tanpa membuat bibir kering.",
+    "longDescription": "VelvetTouch memberi hasil matte lembut yang tahan hingga 8 jam tanpa terasa berat di bibir. Diformulasikan dengan vitamin E agar bibir tetap lembap sepanjang hari.",
+    "stock": 165,
+    "images": ["p23-1", "p23-2", "p23-3"],
+    "specs": {
+      "Volume": "3.5 ml",
+      "Finish": "Matte",
+      "Ketahanan": "Hingga 8 jam",
+      "Kandungan": "Vitamin E"
+    }
+  },
+  {
+    "id": "p24",
+    "name": "Masker Wajah Clay PurifyMud",
+    "category": "Kecantikan",
+    "price": 55000,
+    "rating": 4.3,
+    "desc": "Masker clay untuk membersihkan pori-pori dan mengontrol minyak berlebih di wajah.",
+    "longDescription": "PurifyMud mengandung bentonite clay yang menyerap minyak berlebih dan kotoran di pori-pori, membantu kulit terasa lebih bersih dan segar setelah pemakaian rutin 2-3 kali seminggu.",
+    "stock": 102,
+    "images": ["p24-1", "p24-2", "p24-3"],
+    "specs": {
+      "Volume": "100 gram",
+      "Kandungan Utama": "Bentonite clay, tea tree oil",
+      "Jenis Kulit": "Berminyak, kombinasi",
+      "Pemakaian": "2-3 kali seminggu"
+    }
+  },
+  {
+    "id": "p25",
+    "name": "Shampoo Anti Ketombe FreshHead",
+    "category": "Kecantikan",
+    "price": 42000,
+    "rating": 4.4,
+    "desc": "Shampoo anti ketombe dengan formula lembut yang membersihkan kulit kepala secara menyeluruh.",
+    "longDescription": "FreshHead diformulasikan dengan zinc pyrithione untuk mengatasi ketombe sekaligus menjaga kelembapan kulit kepala. Aromanya segar dan tidak membuat rambut kering.",
+    "stock": 128,
+    "images": ["p25-1", "p25-2", "p25-3"],
+    "specs": {
+      "Volume": "170 ml",
+      "Kandungan Utama": "Zinc pyrithione",
+      "Jenis Rambut": "Semua jenis rambut",
+      "Klaim": "Bebas paraben"
+    }
+  },
+  {
+    "id": "p26",
+    "name": "Jaket Olahraga Windbreaker AeroShield",
+    "category": "Olahraga",
+    "price": 195000,
+    "rating": 4.3,
+    "desc": "Jaket windbreaker ringan dan tahan angin, cocok dipakai lari pagi atau olahraga outdoor.",
+    "longDescription": "AeroShield melindungi dari angin dan gerimis ringan tanpa membuat gerah, dengan bahan quick-dry yang ringan dikantongi saat tidak dipakai. Cocok untuk lari pagi, bersepeda, atau aktivitas outdoor lainnya.",
+    "stock": 58,
+    "images": ["p26-1", "p26-2", "p26-3"],
+    "specs": {
+      "Bahan": "Ripstop quick-dry",
+      "Fitur": "Tahan angin & gerimis ringan",
+      "Ukuran Tersedia": "S, M, L, XL",
+      "Berat": "180 gram"
+    }
+  },
+  {
+    "id": "p27",
+    "name": "Skipping Rope JumpFit Pro",
+    "category": "Olahraga",
+    "price": 55000,
+    "rating": 4.4,
+    "desc": "Tali skipping dengan bearing halus dan tali baja berlapis, cocok untuk latihan kardio harian.",
+    "longDescription": "JumpFit Pro memakai ball bearing di pegangan untuk putaran yang mulus dan minim kusut, dengan tali baja berlapis PVC yang tahan lama. Panjang tali bisa disesuaikan untuk berbagai tinggi badan.",
+    "stock": 140,
+    "images": ["p27-1", "p27-2", "p27-3"],
+    "specs": {
+      "Material Tali": "Baja berlapis PVC",
+      "Pegangan": "Foam dengan ball bearing",
+      "Panjang": "Adjustable hingga 3m",
+      "Cocok Untuk": "Kardio, HIIT"
+    }
+  },
+  {
+    "id": "p28",
+    "name": "Tas Gym Duffel FlexCarry",
+    "category": "Olahraga",
+    "price": 149000,
+    "rating": 4.5,
+    "desc": "Tas duffel dengan kompartemen sepatu terpisah, pas untuk kebutuhan gym harian.",
+    "longDescription": "FlexCarry punya kompartemen sepatu terpisah yang menjaga baju tetap bersih dari sepatu kotor, plus saku samping untuk botol minum. Bahan tahan air memudahkan perawatan sehari-hari.",
+    "stock": 71,
+    "images": ["p28-1", "p28-2", "p28-3"],
+    "specs": {
+      "Material": "Polyester tahan air",
+      "Kapasitas": "35 liter",
+      "Kompartemen": "Utama + sepatu terpisah + saku botol",
+      "Warna": "Hitam, Abu-abu"
+    }
+  },
+  {
+    "id": "p29",
+    "name": "Speaker Bluetooth Portable BoomBox Mini",
+    "category": "Elektronik",
+    "price": 219000,
+    "rating": 4.4,
+    "desc": "Speaker bluetooth portable dengan suara jernih dan bass yang cukup kuat untuk ukurannya.",
+    "longDescription": "BoomBox Mini memberikan suara jernih dengan bass yang mengejutkan untuk ukurannya yang ringkas, tahan cipratan air sehingga cocok dibawa piknik atau kamar mandi. Baterai tahan hingga 10 jam pemakaian.",
+    "stock": 49,
+    "images": ["p29-1", "p29-2", "p29-3"],
+    "specs": {
+      "Daya": "10W RMS",
+      "Baterai": "Hingga 10 jam",
+      "Konektivitas": "Bluetooth 5.1",
+      "Ketahanan": "IPX5 tahan cipratan air"
+    }
+  },
+  {
+    "id": "p30",
+    "name": "Keyboard Mechanical TypeMaster K1",
+    "category": "Elektronik",
+    "price": 349000,
+    "rating": 4.6,
+    "desc": "Keyboard mechanical dengan switch responsif dan backlight RGB, nyaman untuk mengetik maupun gaming.",
+    "longDescription": "TypeMaster K1 memakai switch mechanical blue yang klik-nya memuaskan dan responsif, dengan backlight RGB yang bisa diatur pola dan kecerahannya. Cocok untuk produktivitas maupun gaming kasual.",
+    "stock": 33,
+    "images": ["p30-1", "p30-2", "p30-3"],
+    "specs": {
+      "Tipe Switch": "Mechanical blue",
+      "Layout": "87 key TKL",
+      "Backlight": "RGB adjustable",
+      "Konektivitas": "USB-C kabel"
+    }
+  },
+  {
+    "id": "p31",
+    "name": "Mouse Wireless GlideClick",
+    "category": "Elektronik",
+    "price": 129000,
+    "rating": 4.5,
+    "desc": "Mouse wireless ergonomis dengan sensor presisi tinggi dan baterai tahan lama.",
+    "longDescription": "GlideClick dirancang ergonomis untuk penggunaan seharian tanpa pegal, dengan sensor optik presisi tinggi yang akurat di berbagai permukaan. Baterai AA tunggal bisa tahan hingga 12 bulan.",
+    "stock": 87,
+    "images": ["p31-1", "p31-2", "p31-3"],
+    "specs": {
+      "Sensor": "Optik 1600 DPI",
+      "Konektivitas": "Wireless 2.4GHz",
+      "Baterai": "1x AA, hingga 12 bulan",
+      "Ergonomi": "Desain kanan simetris"
+    }
+  },
+  {
+    "id": "p32",
+    "name": "Vacuum Cleaner Portable CleanSweep",
+    "category": "Rumah Tangga",
+    "price": 259000,
+    "rating": 4.3,
+    "desc": "Vacuum cleaner genggam ringan untuk membersihkan sofa, karpet, dan sela-sela mobil.",
+    "longDescription": "CleanSweep ringan dan mudah digenggam, cukup kuat untuk mengangkat debu dan remah di sofa, karpet, hingga jok mobil. Baterai rechargeable memudahkan pemakaian tanpa kabel.",
+    "stock": 44,
+    "images": ["p32-1", "p32-2", "p32-3"],
+    "specs": {
+      "Daya Hisap": "120W",
+      "Baterai": "Rechargeable, 20 menit pemakaian",
+      "Kapasitas Debu": "0.6 liter",
+      "Berat": "1.1 kg"
+    }
+  },
+  {
+    "id": "p33",
+    "name": "Toaster 2 Slot CrispBite",
+    "category": "Rumah Tangga",
+    "price": 145000,
+    "rating": 4.4,
+    "desc": "Toaster 2 slot dengan pengaturan tingkat kematangan roti, praktis untuk sarapan cepat.",
+    "longDescription": "CrispBite punya 6 tingkat pengaturan kematangan agar roti panggang sesuai selera, dengan fungsi defrost untuk roti beku. Nampan remah bisa dilepas untuk memudahkan pembersihan.",
+    "stock": 62,
+    "images": ["p33-1", "p33-2", "p33-3"],
+    "specs": {
+      "Daya": "750 Watt",
+      "Slot": "2 slot",
+      "Fitur": "6 tingkat kematangan, fungsi defrost",
+      "Material": "Stainless steel"
+    }
+  },
+  {
+    "id": "p34",
+    "name": "Kipas Angin Portable CoolBreeze Mini",
+    "category": "Rumah Tangga",
+    "price": 89000,
+    "rating": 4.2,
+    "desc": "Kipas angin USB portable dengan 3 kecepatan, cocok untuk meja kerja atau bepergian.",
+    "longDescription": "CoolBreeze Mini bertenaga USB rechargeable dengan 3 tingkat kecepatan angin, ringkas untuk ditaruh di meja kerja maupun dibawa bepergian. Desain silent membuatnya tidak mengganggu saat dipakai kerja.",
+    "stock": 118,
+    "images": ["p34-1", "p34-2", "p34-3"],
+    "specs": {
+      "Daya": "USB rechargeable 2000mAh",
+      "Kecepatan": "3 tingkat",
+      "Kebisingan": "Silent operation",
+      "Berat": "280 gram"
+    }
+  },
+  {
+    "id": "p35",
+    "name": "Jaket Denim Unisex ClassicWash",
+    "category": "Fashion",
+    "price": 219000,
+    "rating": 4.5,
+    "desc": "Jaket denim unisex dengan classic wash, cocok dipadukan untuk berbagai gaya kasual.",
+    "longDescription": "ClassicWash memakai denim tebal berkualitas dengan warna classic wash yang tidak lekang zaman, potongan unisex regular fit membuatnya fleksibel dipadukan berbagai outfit kasual.",
+    "stock": 66,
+    "images": ["p35-1", "p35-2", "p35-3"],
+    "specs": {
+      "Bahan": "Denim 100% katun",
+      "Ukuran Tersedia": "S, M, L, XL",
+      "Model": "Regular fit, unisex",
+      "Warna": "Blue wash, Black wash"
+    }
+  },
+  {
+    "id": "p36",
+    "name": "Kaos Polos Premium ComfortBasic",
+    "category": "Fashion",
+    "price": 69000,
+    "rating": 4.4,
+    "desc": "Kaos polos bahan combed 30s yang lembut dan tidak mudah melar, staple wardrobe harian.",
+    "longDescription": "ComfortBasic dibuat dari cotton combed 30s yang lembut di kulit dan tidak mudah melar meski dicuci berkali-kali. Cocok dipakai sendiri atau sebagai layering, tersedia banyak pilihan warna.",
+    "stock": 210,
+    "images": ["p36-1", "p36-2", "p36-3"],
+    "specs": {
+      "Bahan": "Cotton combed 30s",
+      "Ukuran Tersedia": "S, M, L, XL, XXL",
+      "Warna": "Hitam, Putih, Navy, Maroon",
+      "Cara Perawatan": "Cuci mesin, jangan disetrika langsung di sablon"
+    }
+  },
+  {
+    "id": "p37",
+    "name": "Sepatu Sneakers Casual UrbanStep",
+    "category": "Fashion",
+    "price": 259000,
+    "rating": 4.5,
+    "desc": "Sneakers casual dengan desain minimalis, nyaman dipakai jalan-jalan maupun aktivitas harian.",
+    "longDescription": "UrbanStep menggabungkan desain minimalis dengan sol empuk yang nyaman untuk dipakai seharian, cocok dipadukan dengan outfit kasual maupun semi-formal. Upper kanvas mudah dipadupadankan.",
+    "stock": 53,
+    "images": ["p37-1", "p37-2", "p37-3"],
+    "specs": {
+      "Bahan Upper": "Kanvas",
+      "Sol": "Karet empuk anti-slip",
+      "Ukuran Tersedia": "38-43",
+      "Warna": "Putih, Hitam, Krem"
+    }
+  },
+  {
+    "id": "p38",
+    "name": "Hand Cream Moisturizing SoftPalm",
+    "category": "Kecantikan",
+    "price": 35000,
+    "rating": 4.4,
+    "desc": "Hand cream melembapkan dengan aroma lembut, praktis dibawa dalam tas.",
+    "longDescription": "SoftPalm cepat meresap tanpa rasa lengket, cocok dipakai berulang sepanjang hari untuk menjaga tangan tetap lembut terutama di cuaca kering atau ber-AC. Kemasan mininya praktis dibawa dalam tas.",
+    "stock": 175,
+    "images": ["p38-1", "p38-2", "p38-3"],
+    "specs": {
+      "Volume": "50 ml",
+      "Kandungan": "Shea butter, Vitamin E",
+      "Tekstur": "Ringan, cepat meresap",
+      "Aroma": "Lavender lembut"
+    }
+  },
+  {
+    "id": "p39",
+    "name": "Parfum EDT Citrus Breeze",
+    "category": "Kecantikan",
+    "price": 95000,
+    "rating": 4.3,
+    "desc": "Parfum EDT aroma citrus segar, cocok dipakai sehari-hari.",
+    "longDescription": "Citrus Breeze menghadirkan aroma citrus segar yang cocok dipakai sehari-hari, tahan cukup lama tanpa terlalu menyengat. Botol travel-friendly memudahkan dibawa bepergian.",
+    "stock": 89,
+    "images": ["p39-1", "p39-2", "p39-3"],
+    "specs": {
+      "Volume": "50 ml",
+      "Konsentrasi": "Eau de Toilette",
+      "Kategori Aroma": "Citrus, segar",
+      "Ketahanan": "4-6 jam"
+    }
+  },
+  {
+    "id": "p40",
+    "name": "Sikat Gigi Elektrik CleanSonic",
+    "category": "Kecantikan",
+    "price": 179000,
+    "rating": 4.6,
+    "desc": "Sikat gigi elektrik dengan teknologi sonic, membersihkan lebih menyeluruh dibanding sikat manual.",
+    "longDescription": "CleanSonic memakai getaran sonic hingga 20000 gerakan per menit untuk membersihkan plak lebih menyeluruh, dilengkapi timer 2 menit sesuai rekomendasi dokter gigi. Baterai tahan hingga 2 minggu pemakaian.",
+    "stock": 41,
+    "images": ["p40-1", "p40-2", "p40-3"],
+    "specs": {
+      "Teknologi": "Sonic, 20000 gerakan/menit",
+      "Baterai": "Rechargeable, tahan 2 minggu",
+      "Fitur": "Timer 2 menit",
+      "Mode": "Clean, Sensitive, Whitening"
+    }
+  }
+]

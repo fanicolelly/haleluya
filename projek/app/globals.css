@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f7fb;
+  --color-card: #ffffff;
+  --color-ink: #16181d;
+  --color-ink-soft: #6b7280;
+  --color-line: #e5e7eb;
+  --color-brand: #4f46e5;
+  --color-brand-dark: #4338ca;
+  --color-brand-soft: #eef2ff;
+
+  --font-sans: var(--font-inter), Arial, sans-serif;
+  --font-mono: var(--font-plex-mono), "Courier New", monospace;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Efek tepi sobek "struk" untuk panel grounding chatbot RAG — dipertahankan
+   dari prototipe HTML (belanjai-rag-chatbot-demo.html), diskin ulang pakai
+   token warna proyek ini. Pola zig-zag ini sulit diekspresikan lewat utility
+   class Tailwind biasa, jadi ditulis sebagai class CSS kecil di sini. */
+.receipt-tear {
+  height: 9px;
+  background:
+    linear-gradient(135deg, var(--color-card) 25%, transparent 25%) -4px 0/9px 9px repeat-x,
+    linear-gradient(225deg, var(--color-card) 25%, transparent 25%) -4px 0/9px 9px repeat-x;
+  background-color: var(--color-paper);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-enter {
+  animation: toast-in 0.2s ease-out;
+}
