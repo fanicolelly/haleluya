@@ -1,8 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Mic, MicOff, Volume2, Square } from "lucide-react";
-import { classifyIntent, type IntentResult } from "@/lib/accessibility/intent";
+import Link from "next/link";
+import { Mic, MicOff, Volume2, Square, Star, ArrowRight } from "lucide-react";
+import { classifyIntent, COMMAND_EXAMPLES, type IntentResult } from "@/lib/accessibility/intent";
+import { useShop } from "@/lib/shop/ShopContext";
+import { useToast } from "@/lib/toast/ToastContext";
+
+function rupiah(amount: number): string {
+  return "Rp" + amount.toLocaleString("id-ID");
+}
 
 type RecognitionStatus = "idle" | "listening" | "unsupported" | "error";
 
@@ -13,6 +20,40 @@ export default function VoiceCommandPanel() {
   const [manualText, setManualText] = useState("");
   const [speaking, setSpeaking] = useState(false);
   const recognitionRef = useRef<SpeechRecognition | null>(null);
+
+  const { addToCart, toggleWishlist, isInWishlist } = useShop();
+  const { showToast } = useToast();
+
+  // Handler dibungkus ref supaya callback SpeechRecognition (dipasang sekali
+  // di useEffect dengan deps kosong) selalu memanggil versi terbaru, bukan
+  // closure basi dari render pertama.
+  const runCommandRef = useRef<(text: string) => void>(() => {});
+
+  // BENAR-BENAR BERFUNGSI: intent "masukkan ke keranjang" / "simpan ke
+  // wishlist" tidak berhenti di teks — di sini aksinya sungguh dijalankan
+  // lewat ShopContext, jadi isinya muncul di halaman keranjang/wishlist.
+  // Dipanggil dari event handler (bukan saat render) supaya tepat sekali
+  // per perintah.
+  runCommandRef.current = (text: string) => {
+    const result = classifyIntent(text);
+    setTranscript(text);
+    setIntent(result);
+
+    if (!result.action) return;
+
+    const { type, product } = result.action;
+    if (type === "tambah_keranjang") {
+      addToCart(product.id, 1);
+      return;
+    }
+
+    if (isInWishlist(product.id)) {
+      showToast(`${product.name} sudah ada di wishlist`, "info");
+    } else {
+      toggleWishlist(product.id);
+      showToast(`${product.name} disimpan ke wishlist`, "success");
+    }
+  };
 
   useEffect(() => {
     // BENAR-BENAR BERFUNGSI: SpeechRecognition adalah Web Speech API bawaan
@@ -44,9 +85,9 @@ export default function VoiceCommandPanel() {
 
       // BENAR-BENAR BERFUNGSI: klasifikasi intent (lihat lib/accessibility/intent.ts)
       // benar-benar dijalankan terhadap transkrip nyata, hanya saja logikanya
-      // masih keyword matching sederhana, bukan model NLU terlatih.
+      // masih keyword matching, bukan model NLU terlatih.
       if (isFinal) {
-        setIntent(classifyIntent(text));
+        runCommandRef.current(text);
       }
     };
 
@@ -88,8 +129,7 @@ export default function VoiceCommandPanel() {
   const handleManualSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     if (!manualText.trim()) return;
-    setTranscript(manualText);
-    setIntent(classifyIntent(manualText));
+    runCommandRef.current(manualText);
   };
 
   const speak = (text: string) => {
@@ -118,8 +158,9 @@ export default function VoiceCommandPanel() {
         Perintah Suara
       </h3>
       <p className="mt-1 text-sm text-ink-soft">
-        Tekan tombol mikrofon lalu ucapkan perintah, misalnya “cari sepatu lari” atau
-        “berapa harga tas ini”.
+        Tekan tombol mikrofon lalu ucapkan perintah — mencari produk, menanyakan harga
+        atau stok, menambah ke keranjang, sampai membuka halaman pesanan. Ucapkan
+        “perintah apa saja?” untuk mendengar daftar lengkapnya.
       </p>
 
       <div className="mt-6 flex flex-col items-center gap-3">
@@ -180,6 +221,25 @@ export default function VoiceCommandPanel() {
         </div>
       </form>
 
+      <div className="mt-3">
+        <p className="text-xs font-medium text-ink-soft">Contoh perintah yang dikenali</p>
+        <div className="mt-1.5 flex flex-wrap gap-1.5">
+          {COMMAND_EXAMPLES.map((example) => (
+            <button
+              key={example}
+              type="button"
+              onClick={() => {
+                setManualText(example);
+                runCommandRef.current(example);
+              }}
+              className="rounded-full border border-brand/25 bg-brand-soft px-3 py-1.5 font-mono text-[11px] text-brand hover:bg-brand-soft/70"
+            >
+              {example}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {transcript && (
         <div className="mt-5 rounded-xl border border-line bg-paper p-4">
           <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">Transkrip</p>
@@ -211,6 +271,47 @@ export default function VoiceCommandPanel() {
               </button>
             )}
           </div>
+
+          {intent.products && intent.products.length > 0 && (
+            <ul className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+              {intent.products.map((product) => (
+                <li key={product.id}>
+                  <Link
+                    href={`/produk/${product.id}`}
+                    className="flex items-center gap-3 rounded-xl border border-line bg-paper p-3 transition-colors hover:border-brand/40"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <p className="line-clamp-1 text-sm font-medium text-ink">{product.name}</p>
+                      <p className="font-mono text-xs font-semibold text-ink">{rupiah(product.price)}</p>
+                      <p className="mt-0.5 flex items-center gap-1 font-mono text-[11px] text-ink-soft">
+                        <Star size={10} className="fill-amber-400 text-amber-400" aria-hidden="true" />
+                        {product.rating}
+                      </p>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {intent.nav && (
+            <Link
+              href={intent.nav.route}
+              className="inline-flex items-center gap-1.5 rounded-xl bg-brand px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-dark"
+            >
+              {intent.nav.label} <ArrowRight size={15} aria-hidden="true" />
+            </Link>
+          )}
+
+          {intent.examples && (
+            <ul className="space-y-1.5 rounded-xl border border-line bg-paper p-4">
+              {intent.examples.map((example) => (
+                <li key={example} className="font-mono text-xs text-ink-soft">
+                  “{example}”
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       )}
     </section>
